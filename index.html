@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.80.0">
+  <!----script de vue-->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <scri src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<!---formulario php-->
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="form.css">
+  <title>Carousel Template · Bootstrap v5.0</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="form" class="form">proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" >Contacto</a>
+            </li>
+
+          </ul>
+          <!---  <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators ">
+
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="img/js.jpg" class="d-block w-100" alt="...">
+
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Mis repositorios</h1>
+              <p>proyectos realizados con distintas tecnologías</p>
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/jpaiton2334">Conocer
+                </a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/java.png" class="d-block w-100" alt="...">
+          <!--  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>--->
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>
+                Java </h1>
+              <p> App calculo impuesto
+              </p>
+              <p><a class="btn btn-lg btn-primary" href="https://www.youtube.com/watch?v=IttYqdB7brY">Obtener tutorial
+                </a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/html5.jpg" class="d-block w-100" alt="...">
+
+          <!---    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg> --->
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Mi primer sitio
+              </h1>
+              <p>
+              </p>
+              <p><a class="btn btn-lg btn-primary" href="http://juanperaltacasanova.ml/">Ir al sitio </a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previa</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="img/js.jpg" class="d-block w-100" alt="...">
+
+
+          <!---if  de Vue js 
+          <div id="app-3">
+            <span v-if="seen">Now you see me</span>
+          </div>-->
+          <title>Marcador de posición
+          </title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+
+         <h1>Codigo de JS</h1>
+
+
+          <br>
+          <button class="btn btn-secondary" type="button" onclick="mostrarCodigo2();">ver codigo</button>
+          <div id="premio2">
+            <p>esto es un codigo de js</p>
+            <h5>esto tambien</h5>
+            <a href="javascript:void(0);" onclick="ocultarcodigo2();">ocultar</a>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="img/html5.jpg" class="d-block w-100" alt="...">
+
+
+
+          <!----codigo de Vue js -->
+          <!---  <div id="app">
+            {{ message }}
+          </div> --->
+          <!---boton de ocultar y mostrar codigo de html-->
+          <h1>codigo de HTML</h1>
+          <br>
+          <button class="btn btn-secondary" type="button" onclick="mostrarCodigo();">ver codigo</button>
+          <div id="premio">
+            <p>esto es un parrafo de html</p>
+            <h5>esto es un h5 de html</h5>
+            <a href="javascript:void(0);" onclick="ocultarcodigo();">ocultar</a>
+          </div>
+       
+
+
+
+          <title>Marcador de posición</title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="img/bosstrap.png" class="d-block w-100" alt="..." width="160" height="200">
+
+
+
+
+          <!----codigo de Vue js 
+          <div id="form">
+            {{ message }}
+          </div>-->
+          <title>Marcador de posición</title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+          <h1>Bosstrap y CSS</h1>
+         
+         <!---boton de ocultar y mostrar codigo de html-->
+        
+         <br>
+         <button class="btn btn-secondary" type="button" onclick="mostrarCodigo1();">ver codigo</button>
+         <div id="premio1">
+           <p>esto es un diseño  de bosstrap</p>
+           <h5>esto es un diseño de CSS</h5>
+           <a href="javascript:void(0);" onclick="ocultarcodigo1();">ocultar</a>
+         </div>
+      
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Primer título de featurette. <span class="text-muted">
+              Te dejará boquiabierto.</span>
+          </h2>
+          <p class="lead">
+            Un gran contenido de marcador de posición para la primera característica aquí. Imagina una prosa emocionante
+            aquí.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="img/html5.jpg" class="d-block w-100" width="500" height="350" alt="...">
+          <!--- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+          </svg>-->
+
+
+
+          <title>Marcador de posición</title>
+          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Oh, sí, es tan bueno.
+            <span class="text-muted">
+              Ver por ti mismo.</span>
+          </h2>
+          <p class="lead"> ¿Otro featurette? Por supuesto. Más contenido de marcador de posición aquí para darle una
+            idea de cómo esto
+            El diseño funcionaría con contenido real del mundo real en su lugar.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="img/bosstrap.png" class="d-block w-100" alt="..." width="500" height="350">
+          <!--   <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+          </svg>--->
+          <title>Marcador de posición</title>
+          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">
+            Y por último, esta. <span class="text-muted">
+              Y por último, esta.</span></h2>
+          <p class="lead">Y sí, este es el último bloque de contenido de marcador de posición representativo. De nuevo,
+            no realmente
+            destinado a ser leído, simplemente aquí para darle una mejor visión de cómo se vería esto con algunos
+            contenido real. Tu contenido.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="img/bosstrap.png" class="d-block w-100" alt="..." width="500" height="350">
+          <!---  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false"> </svg>
+          -->
+          <title>Marcador de posición</title>
+          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+  
+    </div>
+
+      <form id="formulario" name="formContacto" method="post" action="process.php"  class="form-group">
+        <label for="nombre">Nombre*:</label>
+        <input name="name" placeholder="Introduce tu hombre" class="required" /><br />
+              
+        <label for="apellidos">Apellidos*:</label>
+        <input name="surname" placeholder="Tus dos apellidos" class="required" /><br />
+                      
+        <label for="empresa">Empresa*:</label>
+        <input name="company" placeholder="¿Para quién trabajas?" class="required" /><br />
+          
+        <label for="departamento">Cargo/Departamento:</label>
+        <input name="department" placeholder="¿Qué función desempeñas?" /><br />
+                  
+        <label for="telefono">Teléfono:</label>
+        <input name="phone" placeholder="¿Hablamos?" /><br />
+              
+        <label for="mail">E-mail*:</label>
+        <input name="mail" placeholder="Podré contestarte" class="required" /><br />
+                  
+        <label id="modif01" for="comentario">Comentario:</label>
+        <textarea id="modif02" placeholder="Escribeme tu comentario aquí" name="comment"></textarea><br />
+                          
+        <div id="aster" > * | Campos obligatorios</div>
+                                  
+        <input class="botonAcceder" type="submit" id="boton" value="Enviar" />
+      </form> 
+  
+      <?php
+      include(formulario.php);
+       ?>
+    <!-- FOOTER -->
+    <footer class="container" >
+      <p class="float-end"><a href="#">Volver arriba
+        </a></p>
+      <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Intimidad
+        </a> &middot; <a href="#">Condiciones
+        </a></p>
+    </footer>
+  </main>
+   <!----html formularios-->
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/buton.js"></script>
+  <!-----script de vue-->
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
